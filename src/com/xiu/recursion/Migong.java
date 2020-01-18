@@ -68,4 +68,38 @@ public class Migong {
         }
         return false;
     }
+
+    /**
+     * 改变策略：改成上->右->下->左
+     * @param map
+     * @param i
+     * @param j
+     * @return
+     */
+    /*public static boolean findWay2(int[][] map,int i,int j){
+        if(map[6][5]==2){
+            return true;//通路了
+        }else{
+            if(map[i][j]==0){
+                //还没有走过
+                //按照策略走
+                map[i][j]=2;//先假设该点可以走通
+                if(findWay(map, i-1, j)){
+                    return true;//向上走
+                }else if(findWay(map, i, j+1)){
+                    return true;//向右走
+                }else if(findWay(map, i+1, j)){
+                    return true;//向下走
+                }else if (findWay(map, i,j-1 )){
+                    return true;//向左走
+                }else{
+                    //如果进到这里说明这个点走不通
+                    map[i][j]=3;
+                }
+            }else{
+                return false;
+            }
+        }
+        return false;
+    }*/
 }
