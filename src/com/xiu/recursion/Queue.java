@@ -12,7 +12,7 @@ public class Queue {
         Queue queue = new Queue();
         queue.check(0);
         System.out.println(count);
-        System.out.printf("共进行判断%d次", num);//%d输出整数，%s输出浮点型。
+        System.out.printf("共进行判断%d次", num);//%d输出整数，%s输出浮点型
     }
 
     /**
@@ -21,7 +21,7 @@ public class Queue {
      */
     private void check(int n){
         if(n == max){
-            //n=8时就说明八个皇后已经摆放好了
+            //n=8时说明八个皇后已经摆放好了
             print();
             return;
         }
@@ -35,7 +35,7 @@ public class Queue {
                 //不冲突就开始放第n+1个皇后
                 check(n+1);
             }
-            //如果冲突，就继续执行array[n]=i,因为在for循环中，相当于将第一列往后移一位
+            //如果冲突，继续执行array[n]=i,因为在for循环中，相当于将第一列往后移一位
         }
     }
 
